@@ -1,0 +1,70 @@
+//
+// !!! WARNING !!! AUTO-GENERATED FILE!
+// PLEASE DO NOT MODIFY IT AND USE "platformio.ini":
+// https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
+//
+{
+    "configurations": [
+        {
+            "name": "PlatformIO",
+            "includePath": [
+                "d:/GitHub/Marlin-1.1.9.1-Cliever-CL2ProPlus/Marlin",
+                "C:/Users/Bruno/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+                "d:/GitHub/Marlin-1.1.9.1-Cliever-CL2ProPlus/.pio/libdeps/megaatmega2560/TMC26XStepper",
+                "d:/GitHub/Marlin-1.1.9.1-Cliever-CL2ProPlus/.pio/libdeps/megaatmega2560/Arduino-L6470/src",
+                "d:/GitHub/Marlin-1.1.9.1-Cliever-CL2ProPlus/.pio/libdeps/megaatmega2560/LiquidTWI2",
+                "d:/GitHub/Marlin-1.1.9.1-Cliever-CL2ProPlus/.pio/libdeps/megaatmega2560/Adafruit NeoPixel",
+                "d:/GitHub/Marlin-1.1.9.1-Cliever-CL2ProPlus/.pio/libdeps/megaatmega2560/TMC2208Stepper/src",
+                "d:/GitHub/Marlin-1.1.9.1-Cliever-CL2ProPlus/.pio/libdeps/megaatmega2560/TMC2130Stepper/src",
+                "d:/GitHub/Marlin-1.1.9.1-Cliever-CL2ProPlus/.pio/libdeps/megaatmega2560/LiquidCrystal_I2C",
+                "d:/GitHub/Marlin-1.1.9.1-Cliever-CL2ProPlus/.pio/libdeps/megaatmega2560/U8glib-HAL/src",
+                "C:/Users/Bruno/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+                "C:/Users/Bruno/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                "C:/Users/Bruno/.platformio/packages/framework-arduino-avr/cores/arduino",
+                "C:/Users/Bruno/.platformio/packages/framework-arduino-avr/variants/mega",
+                "C:/Users/Bruno/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+                "C:/Users/Bruno/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                ""
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "d:/GitHub/Marlin-1.1.9.1-Cliever-CL2ProPlus/Marlin",
+                    "C:/Users/Bruno/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+                    "d:/GitHub/Marlin-1.1.9.1-Cliever-CL2ProPlus/.pio/libdeps/megaatmega2560/TMC26XStepper",
+                    "d:/GitHub/Marlin-1.1.9.1-Cliever-CL2ProPlus/.pio/libdeps/megaatmega2560/Arduino-L6470/src",
+                    "d:/GitHub/Marlin-1.1.9.1-Cliever-CL2ProPlus/.pio/libdeps/megaatmega2560/LiquidTWI2",
+                    "d:/GitHub/Marlin-1.1.9.1-Cliever-CL2ProPlus/.pio/libdeps/megaatmega2560/Adafruit NeoPixel",
+                    "d:/GitHub/Marlin-1.1.9.1-Cliever-CL2ProPlus/.pio/libdeps/megaatmega2560/TMC2208Stepper/src",
+                    "d:/GitHub/Marlin-1.1.9.1-Cliever-CL2ProPlus/.pio/libdeps/megaatmega2560/TMC2130Stepper/src",
+                    "d:/GitHub/Marlin-1.1.9.1-Cliever-CL2ProPlus/.pio/libdeps/megaatmega2560/LiquidCrystal_I2C",
+                    "d:/GitHub/Marlin-1.1.9.1-Cliever-CL2ProPlus/.pio/libdeps/megaatmega2560/U8glib-HAL/src",
+                    "C:/Users/Bruno/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+                    "C:/Users/Bruno/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                    "C:/Users/Bruno/.platformio/packages/framework-arduino-avr/cores/arduino",
+                    "C:/Users/Bruno/.platformio/packages/framework-arduino-avr/variants/mega",
+                    "C:/Users/Bruno/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+                    "C:/Users/Bruno/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                    ""
+                ]
+            },
+            "defines": [
+                "PLATFORMIO=60119",
+                "ARDUINO_AVR_MEGA2560",
+                "F_CPU=16000000L",
+                "ARDUINO_ARCH_AVR",
+                "ARDUINO=10808",
+                "__AVR_ATmega2560__",
+                ""
+            ],
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++11",
+            "compilerPath": "C:/Users/Bruno/.platformio/packages/toolchain-atmelavr/bin/avr-gcc.exe",
+            "compilerArgs": [
+                "-mmcu=atmega2560",
+                ""
+            ]
+        }
+    ],
+    "version": 4
+}
