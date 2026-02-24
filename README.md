@@ -2,20 +2,20 @@
 
 Abaixo está a lista de modificações aplicadas na configuração base do Marlin 1.1.9.1 para torná-lo compatível com a impressora CoreXY (Cliever CL2 Pro Plus Fuso 4mm), adaptada para extrusão de argila (sem aquecimento).
 
-# 1. Configurações Físicas e Placa-Mãe
+## 1. Configurações Físicas e Placa-Mãe
 Placa-mãe (MOTHERBOARD): BOARD_PRINTRBOARD (Microcontrolador AT90USB1286).
 Cinemática (COREXY): Habilitada! (Essencial para a mecânica de movimentação cruzada da CL2).
 Baudrate: 250000 (Velocidade de comunicação USB).
 Drivers de Passo: A configuração utiliza os drivers A4982/A4988 embutidos na placa com microstepping nativo de 1/16.
 
-# 2. Ajustes de Temperatura (Adaptação para Argila)
+## 2. Ajustes de Temperatura (Adaptação para Argila)
 Como o objetivo é imprimir materiais pastosos à temperatura ambiente, o firmware foi "enganado" para permitir a movimentação do extrusor a frio e prevenir erros de hardware:
 
 Sensores de Temperatura (TEMP_SENSOR_0 e TEMP_BED): Configurados como 998 na Extrusora (lê sempre 25°C) e 0 na Mesa Aquecida (desativada).
 Prevenção de Extrusão a Frio (PREVENT_COLD_EXTRUSION): Desativada! O extrusor agora vai girar independentemente da temperatura aferida.
 Temperatura Mínima de Extrusão (EXTRUDE_MINTEMP): Reduzida para 0°C.
 
-# 3. Fins de Curso (Endstops)
+## 3. Fins de Curso (Endstops)
 Para alinhar o Homing (Zero Máquina) com o firmware original da Cliever:
 
 Direções de Homing (X_HOME_DIR, Y_HOME_DIR, Z_HOME_DIR): O eixo X movimenta para o MAX (+1), Y para o MIN (-1), e Z para o MAX (+1).
@@ -23,7 +23,7 @@ Plugs Ativos: USE_XMAX_PLUG, USE_YMIN_PLUG e USE_ZMAX_PLUG.
 Inversão Lógica (*_ENDSTOP_INVERTING): Definida como false para todos.
 Pullups: Habilitado ENDSTOPPULLUPS internamente no chip.
 
-# 4. Volume de Impressão e Movimentação
+## 4. Volume de Impressão e Movimentação
 As dimensões físicas e velocidades foram copiadas do firmware de fábrica:
 
 Tamanho da Mesa: X = 300mm | Y = 226mm | Z Máximo = 400mm.
@@ -34,15 +34,15 @@ Aceleração Padrão de Impressão / Curso: 2000 mm/s².
 Jerks (Solavancos): X/Y = 10.0, Z = 0.3, Extrusor = 2.0.
 Velocidade de Homing: Padrão rápido para XY e (12*60) mm/min para o eixo Z.
 
-# 5. Funcionalidades Extras
+## 5. Funcionalidades Extras
 EEPROM (EEPROM_SETTINGS): Ativada (Permite salvar alterações via gcode, como Steps/mm, através do comando M500).
 Suporte à SD Card (SDSUPPORT): Ativado para permitir leitura dos gcodes pelo display.
 Controlador LCD: A interface foi configurada como ULTIMAKERCONTROLLER.
-Homing Retract: Ajustado em 
-Configuration_adv.h
- para que o bico suba/afaste 5mm levemente na hora de encostar nos fins de curso, melhorando a precisão do sensor.
+Homing Retract: Ajustado em Configuration_adv.h para que o bico suba/afaste 5mm levemente na hora de encostar nos fins de curso, melhorando a precisão do sensor.
+
 
 ---
+
 
 # Marlin 3D Printer Firmware
 <img align="right" src="../../raw/1.1.x/buildroot/share/pixmaps/logo/marlin-250.png" />
